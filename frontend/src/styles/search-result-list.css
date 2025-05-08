@@ -1,0 +1,16 @@
+.active-filter {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  .search__result-container button {
+    margin: 5px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+  }
+  .search__result-container button:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }

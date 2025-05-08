@@ -1,0 +1,110 @@
+.rent__img img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card {
+    border: none !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.rent__img {
+    position: relative;
+}
+
+.rent__img span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0 0;
+}
+
+.rent__rating i {
+    color:#D5AB55;
+}
+
+.rent__location i {
+    color: var(--secondary-color);
+}
+
+.bed__icon {
+    width: 25px;
+}
+
+.bath__icon {
+    width: 20px;
+    margin-left: 20px;
+}
+
+.rent__rating {
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+.rent__location {
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.rent__rating i, .rent__location i {
+    font-size: 1rem;
+}
+
+.rent__title {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.rent__title a {
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: .3s;
+}
+
+.rent__title a:hover {
+    color: var(--secondary-color);
+}
+
+.card__bottom h5 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card__bottom h5 span {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.card__bottom h5 .per__month {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: .8rem;
+}
+
+.booking__btn {
+    background: var(--secondary-color) !important;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem !important;
+    right: 0 !important;
+}
+
+.booking__btn a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #fff;
+}
+
+.booking__btn a:hover {
+    color: #fff;
+}
+

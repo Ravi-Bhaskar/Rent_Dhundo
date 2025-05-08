@@ -1,0 +1,243 @@
+.filter-panel__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.639);
+  z-index: 99999 !important;
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(0);
+}
+
+.filter-panel__container.hide {
+  transform: translateX(100%);
+}
+
+.filter-panel__section {
+  position: absolute;
+  height: -webkit-fill-available;
+  max-height: initial;
+  overflow-y: auto;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 10px;
+  background: #fff;
+  width: 335px;
+  z-index: 99999 !important;
+}
+
+.filter-panel__section button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: 2px solid var(--secondary-color);
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-panel__section button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.filter-buttons button:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #fff;
+}
+
+.filter-buttons button.active-filter {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.filters select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.price-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: var(--secondary-color) !important;
+  transition: background 450ms ease-in;
+}
+
+/* Chrome, Safari, Edge */
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+/* Firefox */
+.price-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--primary-color);
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Labels */
+.price-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.current-price {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+@media only screen and (max-width: 576px) {
+  .filter-panel__section,
+  .cart__close {
+    width: 300px !important;
+  }
+  .filter-btn {
+    font-size: 14px !important;
+  }
+  .filter-btn img {
+    width: 16px !important;
+  }
+  .featured__rent-title {
+    font-size: 26px;
+  }
+}
+
+.cart__close {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 335px;
+  padding: 10px 10px 10px 10px;
+  background: #fff;
+  border-top-right-radius: 10px;
+}
+/* .cart__close {
+  text-align: right;
+  margin-bottom: 1rem;
+} */
+
+.cart__close span i {
+  font-size: 1.1rem;
+  background: #212245;
+  padding: 5px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+.cart__close span i:hover {
+  background: #463fa3;
+  color: #fff;
+}
+
+.rent-list__section {
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.buttons-container {
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons-container .button {
+  border: 2px solid #ddd;
+  background: transparent;
+  margin: 5px 5px;
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons-container .button:hover {
+  box-shadow: 3px 3px 0px 0px var(--text-color);
+}
+
+.buttons-container .active {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.filter-btn {
+  font-size: 18px;
+  font-weight: 500;
+  height: fit-content;
+  cursor: pointer;
+  color: var(--text-color);
+  padding: 5px 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 30px;
+  margin-right: 0;
+  margin-left: auto;
+  display: block;
+}
+
+.filter-btn:hover {
+  background-color: var(--text-color);
+  color: #fff;
+}
+
+.filter-btn img {
+  width: 22px;
+}
+
+.pagination span {
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--secondary-color);
+  color: var(--text-color);
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.active__page {
+  background: var(--secondary-color);
+  color: #fff !important;
+}
+
+.loading {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+}

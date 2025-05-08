@@ -1,0 +1,42 @@
+.rent_step__item {
+  height: 200px;
+  max-width: 100%;
+  padding: 0.5rem;
+  box-shadow: rgba(41, 3, 63, 0.15) 10px 18px 100px 0px;
+  border-top: 3px solid var(--secondary-color);
+  border-bottom: 3px solid var(--secondary-color);
+  border-left: 1px solid var(--secondary-color);
+  border-right: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rent_step__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  width: 55px;
+  height: 55px;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50px;
+  background: var(--secondary-color);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.rent_step__img img {
+  width: 100%;
+}
+
+.rent_step__item h5 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.rent_step__item p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}

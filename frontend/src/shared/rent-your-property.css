@@ -1,0 +1,113 @@
+.rent-your-property__section {
+    background: var(--secondary-color);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    padding: 50px;
+    margin: 50px 0px 0px 0px;
+    width: auto;
+    max-height: 300px;
+    justify-content: space-between;
+}
+
+.rent-your-property__section-2 {
+    margin-left: 50px;
+}
+
+.rent-your-property__subtitle {
+    font-size: 1.7em;
+    font-weight: 700;
+    color: #DFFF00;
+    font-family: var(--poppins-font);
+}
+
+.rent-your-property__title {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.rent-your-property__btn {
+    background: var(--white-color) !important;
+    cursor: pointer;
+    padding: 0.3rem 0.5rem !important;
+    right: 0 !important;
+    border-radius: 4px;
+    border: 3px solid #fff;
+    margin-top: 10px;
+}
+
+.rent-your-property__btn a {
+    margin: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.rent-your-property__btn a:hover {
+    color: var(--secondary-color);
+}
+
+.rent_your_house img {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .rent-your-property__section {
+        padding: 0px;
+        margin: 0px;
+    }
+    .rent-your-property__section-2 {
+        margin: 30px;
+    }
+    .rent_your_house img {
+        width: 150px;
+    }
+    .rent-your-property__subtitle {
+        font-size: 1.2em;
+    }
+    
+    .rent-your-property__title {
+        font-size: 1rem;
+    }
+    .rent-your-property__btn {
+        padding: 0px 5px !important;
+        border: 0;
+    }
+    .rent-your-property__btn a {
+        margin: 10px;
+        font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .rent-your-property__section {
+        padding: 0px;
+        margin: 0px;
+    }
+    .rent-your-property__section-2 {
+        margin: 20px;
+    }
+    .rent_your_house img {
+        width: 150px;
+    }
+    .rent-your-property__subtitle {
+        font-size: 1em;
+    }
+    
+    .rent-your-property__title {
+        font-size: 0.8rem;
+    }
+    .rent-your-property__btn {
+        margin-top: 10px;
+        padding: 0px 5px !important;
+        border: 0;
+    }
+    .rent-your-property__btn a {
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+  }
